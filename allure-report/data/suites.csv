@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Apr 06 16:28:10 UTC 2023","Thu Apr 06 16:28:10 UTC 2023","70","/usuarios GET","","","","","Query string - Nenhum usuário encontrado",""
+"passed","Thu Apr 06 16:28:10 UTC 2023","Thu Apr 06 16:28:10 UTC 2023","69","/usuarios CONTRATO","","","","","POST",""
+"passed","Thu Apr 06 16:28:10 UTC 2023","Thu Apr 06 16:28:10 UTC 2023","65","/usuarios CONTRATO","","","","","PUT",""
+"passed","Thu Apr 06 16:28:10 UTC 2023","Thu Apr 06 16:28:10 UTC 2023","272","/usuarios CONTRATO","","","","","GET",""
+"broken","Thu Apr 06 16:28:10 UTC 2023","Thu Apr 06 16:28:10 UTC 2023","2","/usuarios GET","","","","","Query string - Busca por todos as chaves",""
+"broken","Thu Apr 06 16:28:10 UTC 2023","Thu Apr 06 16:28:10 UTC 2023","63","/usuarios GET","","","","","Query string - Chave inexistente",""
