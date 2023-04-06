@@ -19,7 +19,7 @@ jobs:
            npm install -g allure-commandline --save-dev
     - name: Executar os testes de API
       run: npm run test.prod
-      continue-on-error:  true
+      # continue-on-error:  true
     - name: mostra as pastas
       run: ls -la
     - name: Collect Allure files and generate allure-report folder
