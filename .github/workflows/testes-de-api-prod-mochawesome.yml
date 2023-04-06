@@ -1,4 +1,4 @@
-name: Testes de API em PROD com report usando o mochawesome.
+name: Testes de API em PROD e mochawesome.
 
 on:
   push:
