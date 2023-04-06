@@ -1,4 +1,4 @@
-name: Testes de API em PROD
+name: Testes de API em PROD e Allure
 
 on:
   push:
