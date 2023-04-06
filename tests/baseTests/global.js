@@ -1,4 +1,3 @@
-require('chai/register-expect')
 const supertest = require('supertest')
 const { url } = require('../../config')
 const chai = require('chai')
