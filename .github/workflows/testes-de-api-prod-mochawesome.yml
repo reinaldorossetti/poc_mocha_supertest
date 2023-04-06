@@ -22,19 +22,16 @@ jobs:
       # continue-on-error:  true
     - name: mostra as pastas
       run: ls -la
-    - name: Collect Allure files and generate allure-report folder
-      run: |
-        allure generate allure-results --clean -o allure-report
     - name: Publishing Allure artifact to GitHub Actions
       uses: actions/upload-artifact@v3
       with:
-        name: allure-report
-        path: allure-report
+        name: report
+        path: report
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages  # default: gh-pages
-        publish_dir: allure-report
-        destination_dir: allure-report
+        publish_dir: report
+        destination_dir: report
