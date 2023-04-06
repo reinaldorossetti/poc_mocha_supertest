@@ -1,6 +1,6 @@
 # Mocha e Supertest - POC
 
-** Exemplo de estrutura de automação de testes de API feita com Mocha, Chai, SuperTest e Allure-Mocha. 
+** Exemplo de estrutura de automação de testes de API, feita com Mocha, Chai, SuperTest e Allure-Mocha. 
 Mocha fornece a execução dos testes e a forma que o mesmo é descrito, o Chai irá fornecer os asserts no formato style BDD, parecido com o Postman, e Allure fornece o relatório dos testes. **
 
 - [Instalação e execução](#instalação-e-execução)
