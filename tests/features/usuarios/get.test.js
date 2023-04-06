@@ -1,5 +1,5 @@
 const rotaUsuarios = '/usuarios'
-const utils = require('../../baseTests/global.js')
+const utils = require('../../baseTests/')
 
 describe(rotaUsuarios + ' GET', () => {
   it('Query string - Busca por todos as chaves', async () => {

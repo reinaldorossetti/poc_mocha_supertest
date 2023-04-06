@@ -5,5 +5,5 @@ chai.use(require('dirty-chai')) // use dirty-chai to avoid eslint errors
 
 global.expect = chai.expect
 global.request = supertest(url)
-global.allure = require('allure-mocha/runtime')
+global.allure = require('allure-mocha/runtime').allure
 global.faker = require('faker')
