@@ -148,8 +148,8 @@ Para testar o ambiente `hom` deve ser criado o arquivo `hom.config.js` e o coman
 
 ``` json
 "scripts": {
-  "test": "cross-env AMBIENTE='local' mocha",
-  "test:prod": "cross-env AMBIENTE='producao' mocha"
+  "test.local": "cross-env AMBIENTE='local' mocha",
+  "test.prod": "cross-env AMBIENTE='producao' mocha"
 },
 ```
 
