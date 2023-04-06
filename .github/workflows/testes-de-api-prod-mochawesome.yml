@@ -1,4 +1,4 @@
-name: Testes de API em PROD
+name: Testes de API em PROD com report usando o mochawesome.
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
       # continue-on-error:  true
     - name: mostra as pastas
       run: ls -la
-    - name: Publishing Allure artifact to GitHub Actions
+    - name: Publishing artifact to GitHub Actions
       uses: actions/upload-artifact@v3
       with:
         name: report
