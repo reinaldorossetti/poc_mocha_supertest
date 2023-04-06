@@ -4,7 +4,6 @@ module.exports = {
   reporter: "allure-mocha",
   parallel: false,
   recursive: true,
-  reporterOptions: 'json=false,reportDir=report,reportFilename=automacao-api',
   require: ['tests/baseTests/global.js'],
   timeout: 5000,
   ui: "bdd",
