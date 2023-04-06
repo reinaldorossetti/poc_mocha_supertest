@@ -1,7 +1,7 @@
 module.exports = {
   reporter: "allure-mocha",
   //reporterOptions: 'json=false,reportDir=report,reportFilename=automacao-api',
-  require: ['tests/baseTests/global.js',"chai/register-expect"],
+  require: ['tests/baseTests/global.js'],
   timeout: 5000,
   parallel: false,
   jobs: 4,
