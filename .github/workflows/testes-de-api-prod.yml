@@ -18,6 +18,8 @@ jobs:
       run: npm ci  | 
            npm install -g allure-commandline --save-dev
     - name: Executar os testes de API
+      fail_on_error: true
+      brakeman_flags: '--no-exit-on-warn --no-exit-on-error'
       run: npm run test.prod
     - name: mostra as pastas
       run: ls -la
