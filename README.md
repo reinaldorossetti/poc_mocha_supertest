@@ -3,6 +3,9 @@
 ** Exemplo de estrutura de automação de testes de API, feita com Mocha, Chai, SuperTest e Allure-Mocha. 
 Mocha fornece a execução dos testes e a forma que o mesmo é descrito, o Chai irá fornecer os asserts no formato style BDD, parecido com o Postman, e Allure fornece o relatório dos testes. **
 
+Report allure: https://reinaldorossetti.github.io/cypress-intermediario-v2/allure-report/#  <br>
+Report mochawesome: https://reinaldorossetti.github.io/poc_mocha_supertest/report/#  <br>
+
 - [Instalação e execução](#instalação-e-execução)
   - [Pré-requisitos](#pré-requisitos)
   - [Clonando o repositório](#clonando-o-repositório)
@@ -62,7 +65,6 @@ Para exibir o Report (Foi utilizado o Allure Report):
 ```sh
 npm run report
 ```
-
 Para executar os testes localmente (_http://localhost:3000_) é preciso subir o ambiente local utilizando NPM ou Docker. [Verifique aqui como](https://github.com/PauloGoncalvesBH/ServeRest#ambientes-dispon%C3%ADveis). Após isso execute:
 
 ```sh
