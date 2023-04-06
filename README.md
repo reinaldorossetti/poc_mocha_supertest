@@ -152,7 +152,7 @@ Para testar o ambiente `hom` deve ser criado o arquivo `hom.config.js` e o coman
 },
 ```
 
-## Allure report
+## Allure report  
 podemos adicionar variaveis e severidade dos testes.
 podemos usar os tipos: blocker, critical, minor, trivial.
 o tipo normal é padrão, não precisando ser adicionada.
@@ -161,7 +161,7 @@ no teste adicionamos o comando abaixo:
 allureMocha.allure.severity("critical")
 ````
 
-## Lint
+## Lint  
 
 É boa prática que os arquivos estejam padronizados, seguindo o padrão de estilo do JS.
 Para isso é utilizado a lib [Standard](https://www.npmjs.com/package/standard).
@@ -173,5 +173,5 @@ Após o término da sua implementação, execute:
 ### Referências:  
 [Supertest](https://www.npmjs.com/package/supertest)  
 [Mocha](https://www.npmjs.com/package/mocha)  
-[Allure Mocha](https://docs.qameta.io/allure/#_mocha)
-[Chai](https://www.chaijs.com/api/bdd/)
+[Allure Mocha](https://docs.qameta.io/allure/#_mocha)  
+[Chai](https://www.chaijs.com/api/bdd/)  
