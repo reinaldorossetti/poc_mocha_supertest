@@ -31,7 +31,8 @@
       "it",
       "request",
       "expect",
-      "allure"
+      "allure",
+      "faker"
     ]
   }
 }
