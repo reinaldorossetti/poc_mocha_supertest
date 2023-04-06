@@ -1,10 +1,10 @@
+require('chai/register-expect')
 const supertest = require('supertest')
-const { expect } = require("chai");
 const { url } = require('../../config')
-const allureMocha = require("allure-mocha/runtime");
-const faker = require('faker')
+const chai = require('chai')
+chai.use(require('dirty-chai')) // use dirty-chai to avoid eslint errors
 
+global.expect = chai.expect
 global.request = supertest(url)
-global.expect = expect
-global.allureMocha = allureMocha
-global.faker = faker
+global.allure = require('allure-mocha/runtime')
+global.faker = require('faker')
