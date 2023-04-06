@@ -41,6 +41,8 @@ cd poc_mocha_supertest
 npm install
 ```
 
+**Passo 3** - Executando o projeto e gerando o Relatório:
+
 ### Testes de API, todos os direito a Paulo Goncalves, pelo Serverest e esse projeto tem como base inicial o Serverest.
 
 Os testes foram realizados em cima do [Serverest](https://github.com/PauloGoncalvesBH/ServeRest), que fornece rotas REST para fins de estudos.
@@ -53,6 +55,7 @@ Caso queira apenas rodar os testes, sem precisar subir ambiente, execute o segui
 
 ```sh
 npm run test.prod
+npm run test.local
 ```
 Para exibir o Report (Foi utilizado o Allure Report):
 ```sh
@@ -71,8 +74,7 @@ As variáveis por ambiente estão definidos dentro dos arquivos _*.config.js_ em
 
 O resultado dos testes são apresentados no terminal e em report HTML gerado com [allure-mocha](https://www.npmjs.com/package/allure-mocha).
 
-
-## Sobre o projeto
+**Passo 4** - Como funciona a Estrutura do Projeto:
 
 ### Dependências utilizadas
 | lib | descrição
@@ -107,9 +109,9 @@ poc-mocha-supertest/
 
 - :file_folder: [config/](config): Dir com as variáveis que dependem do ambiente (ex.: _url, senha, password_)
 - :file_folder: [tests/](tests): Dir com os testes das rotas e arquivos que auxiliam a automação.
-  - :file_folder: [usuarios/](test/usuarios) Dir com os testes da rota\recurso _usuarios_. O nome do diretório sempre será o da rota validada.
+  - :file_folder: [usuarios/](tests/usuarios) Dir com os testes da rota\recurso\end point _usuarios_. O nome do diretório sempre será o da rota validada.
     - :page_with_curl: [get.test.js](test/usuarios/get.test.js) Arquivo de teste do verbo GET.
-  - :file_folder: [utils/](test/utils): Dir com todos os métodos consumidos pelos testes
+  - :file_folder: [utils/](tests/baseTests): Dir com todos os métodos consumidos pelos testes.
 - :page_with_curl: [.mocharc.js](.mocharc.js): Arquivo de configuração do Mocha.
 - :page_with_curl: [package.json](package.json): Arquivo com informações das dependências do projeto, licença, scripts, autor, etc. Para saber mais [clique aqui](https://docs.npmjs.com/files/package.json)
 
@@ -128,7 +130,7 @@ Caso precisarmos setar password para o ambiente `local`, acesse o arquivo [local
 
 Para consumir essa variável no seu arquivo de teste, importe o dir [config/](config):
 ``` js
-// test/usuarios/post.test.js
+// tests/usuarios/post.test.js
 
 const config = require('../../config')
 console.log('Valor de Password:', config.password)
@@ -171,4 +173,5 @@ Após o término da sua implementação, execute:
 ### Referências:  
 [Supertest](https://www.npmjs.com/package/supertest)  
 [Mocha](https://www.npmjs.com/package/mocha)  
+[Allure Mocha](https://docs.qameta.io/allure/#_mocha)
 [Chai](https://www.chaijs.com/api/bdd/)
