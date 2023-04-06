@@ -1,5 +1,3 @@
-const faker = require('faker')
-
 async function cadastrarUsuario ({
   nome = faker.name.firstName() + ' ' + faker.name.lastName(),
   email = faker.internet.email(),
