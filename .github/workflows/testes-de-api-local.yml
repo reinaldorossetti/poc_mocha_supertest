@@ -1,0 +1,42 @@
+name: Testes de API Local
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+permissions: write-all
+
+jobs:
+  teste-de-api-com-serverest-local-em-docker:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do repositório
+      uses: actions/checkout@v3
+    - name: Setup do Node.js
+      uses: actions/setup-node@v3
+    - name: Instalar as dependências do projeto
+      run: npm ci  | 
+           npm install -g allure-commandline --save-dev
+    - name: Executar o ServeRest localmente com Docker
+      run: docker run -d -p 3000:3000 paulogoncalvesbh/serverest:latest
+    - name: Executar os testes de API
+      run: npm test
+    - name: mostra as pastas
+      run: ls -la
+    - name: Collect Allure files and generate allure-report folder
+      run: |
+        allure generate allure-results --clean -o allure-report
+    - name: Publishing Allure artifact to GitHub Actions
+      uses: actions/upload-artifact@v3
+      with:
+        name: allure-report
+        path: allure-report
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages  # default: gh-pages
+        publish_dir: allure-report
+        destination_dir: allure-report
