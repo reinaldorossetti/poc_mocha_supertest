@@ -171,7 +171,7 @@ Após o término da sua implementação, execute:
 `npm run lint:fix`
 
 ### Referências:  
-[Supertest](https://www.npmjs.com/package/supertest)  
-[Mocha](https://www.npmjs.com/package/mocha)  
+[Supertest](https://github.com/ladjs/supertest#readme)   
+[Mocha](https://mochajs.org)
 [Allure Mocha](https://docs.qameta.io/allure/#_mocha)  
 [Chai](https://www.chaijs.com/api/bdd/)  
