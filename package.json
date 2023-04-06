@@ -5,9 +5,9 @@
   "description": "Exemplo de estrutura de automação de API feita com Supertest e Mocha",
   "author": "Rei",
   "scripts": {
-    "test.local": "cross-env AMBIENTE='local' mocha -R allure-mocha --retries 2",
-    "test.prod": "cross-env AMBIENTE='producao' mocha --config .mocharcMochawesome.js --retries 2",
-    "test.ci": "cross-env AMBIENTE='producao' mocha --config .mocharcAllure.js --retries 2 --no-parallel",
+    "test.local": "cross-env AMBIENTE='local' mocha -R allure-mocha --retries 1",
+    "test.prod": "cross-env AMBIENTE='producao' mocha --config .mocharcMochawesome.js --retries 1",
+    "test.ci": "cross-env AMBIENTE='producao' mocha --config .mocharcAllure.js --retries 1 --no-parallel",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
