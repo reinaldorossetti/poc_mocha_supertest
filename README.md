@@ -111,7 +111,7 @@ poc-mocha-supertest/
 - :file_folder: [tests/](tests): Dir com os testes das rotas e arquivos que auxiliam a automação.
   - :file_folder: [usuarios/](tests/usuarios) Dir com os testes da rota\recurso\end point _usuarios_. O nome do diretório sempre será o da rota validada.
     - :page_with_curl: [get.test.js](test/usuarios/get.test.js) Arquivo de teste do verbo GET.
-  - :file_folder: [utils/](tests/baseTests): Dir com todos os métodos consumidos pelos testes.
+  - :file_folder: [baseTests/](tests/baseTests): Dir com todos os métodos consumidos pelos testes.
 - :page_with_curl: [.mocharc.js](.mocharc.js): Arquivo de configuração do Mocha.
 - :page_with_curl: [package.json](package.json): Arquivo com informações das dependências do projeto, licença, scripts, autor, etc. Para saber mais [clique aqui](https://docs.npmjs.com/files/package.json)
 
