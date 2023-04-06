@@ -84,7 +84,7 @@ O resultado dos testes são apresentados no terminal e em report HTML gerado com
 | [Chai](https://www.npmjs.com/package/chai)| Asserção em formato de BDD / TDD
 | [@hapi/joi](https://www.npmjs.com/package/@hapi/joi) | Biblioteca para criação de schemas
 | [Faker](https://www.npmjs.com/package/faker)| Gera dados aleatórios para serem utilizados nos testes
-| [Allure-mocha](https://www.npmjs.com/package/allure-mocha))| Gera report HTML
+| [Allure-mocha](https://www.npmjs.com/package/allure-mocha)| Gera report HTML
 | [Standard](https://www.npmjs.com/package/standard)| Linter e formatter do código JS
 | [Cross-env](https://www.npmjs.com/package/cross-env)| Criação de variável de ambiente
 
