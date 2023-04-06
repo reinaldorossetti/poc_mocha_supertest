@@ -40,6 +40,7 @@ cd poc_mocha_supertest
 ```sh
 npm install
 ```
+### Testes de API
 
 **Passo 3** - Executando o projeto e gerando o Relatório:
 
