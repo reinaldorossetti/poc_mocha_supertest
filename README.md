@@ -43,7 +43,7 @@ npm install
 
 **Passo 3** - Executando o projeto e gerando o Relatório:
 
-### Testes de API, todos os direito a Paulo Goncalves, pelo Serverest e esse projeto tem como base inicial o Serverest.
+Testes de API, todos os direito a Paulo Goncalves, pelo Serverest e esse projeto tem como base inicial o Serverest.
 
 Os testes foram realizados em cima do [Serverest](https://github.com/PauloGoncalvesBH/ServeRest), que fornece rotas REST para fins de estudos.
 
