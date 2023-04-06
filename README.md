@@ -154,12 +154,12 @@ Para testar o ambiente `hom` deve ser criado o arquivo `hom.config.js` e o coman
 ```
 
 ## Allure report  
-podemos adicionar variaveis e severidade dos testes.
-podemos usar os tipos: blocker, critical, minor, trivial.
-o tipo normal é padrão, não precisando ser adicionada.
-no teste adicionamos o comando abaixo:
+Podemos adicionar variaveis e severidade dos testes para ser exibidos no report.
+Tipos de severidade que podemos usar os tipos: blocker, critical, minor, trivial.O tipo normal é padrão, não precisando ser adicionada.
+Nos testes precisamos adicionar os comandos abaixos:
 ````js
-allureMocha.allure.severity("critical")
+allure.severity("critical")
+allure.parameter('body', String(response.text))
 ````
 
 ## Lint  
