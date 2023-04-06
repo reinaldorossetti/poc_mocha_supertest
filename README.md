@@ -40,7 +40,7 @@ cd poc_mocha_supertest
 npm install
 ```
 
-### Testes de API, todos os direito a Paulo Goncalves, pelo Serverest e esse projeto tendo como base o exemplo do mesmo.
+### Testes de API, todos os direito a Paulo Goncalves, pelo Serverest e esse projeto tem como base inicial o Serverest.
 
 Os testes foram realizados em cima do [Serverest](https://github.com/PauloGoncalvesBH/ServeRest), que fornece rotas REST para fins de estudos.
 
@@ -170,3 +170,4 @@ Após o término da sua implementação, execute:
 ### Referências:  
 [Supertest](https://www.npmjs.com/package/supertest)  
 [Mocha](https://www.npmjs.com/package/mocha)  
+[Chai](https://www.chaijs.com/api/bdd/)
