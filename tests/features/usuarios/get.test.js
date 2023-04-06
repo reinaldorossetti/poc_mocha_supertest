@@ -11,7 +11,7 @@ describe(rotaUsuarios + ' GET', () => {
       administrador: usuario.administrador,
       _id: usuario._id
     }).expect(200)
-    allure.severity('critical')
+    allureMocha.allure.severity('critical')
     expect(body).to.deep.equal({
       quantidade: 1,
       usuarios: [
