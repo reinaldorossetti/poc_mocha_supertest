@@ -173,6 +173,20 @@ Após o término da sua implementação, execute:
 
 `npm run lint:fix`
 
+##  Validaçãoes dos Testes
+As validações foram feitas através do Chai Assertion Library, no formato que ele chama de  BDD style usando o Expect.
+The BDD style is exposed through expect or should interfaces. In both scenarios, you chain together natural language assertions.
+````JS
+var expect = require('chai').expect
+  , foo = 'bar'
+  , beverages = { tea: [ 'chai', 'matcha', 'oolong' ] };
+
+expect(foo).to.be.a('string');
+expect(foo).to.equal('bar');
+expect(foo).to.have.lengthOf(3);
+expect(beverages).to.have.property('tea').with.lengthOf(3);
+````
+
 ### Referências:  
 [Supertest](https://github.com/ladjs/supertest#readme)   
 [Mocha](https://mochajs.org)
