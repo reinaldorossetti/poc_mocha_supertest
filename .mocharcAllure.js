@@ -2,8 +2,8 @@
 
 module.exports = {
   reporter: "allure-mocha",
-  require: ['tests/baseTests/global.js'],
+  require: ['test/baseTests/global.js'],
   timeout: 5000,
   ui: "bdd",
-  spec: ["tests/features/**/*.test.js"]
+  spec: ["test/features/**/*.test.js"]
 }
