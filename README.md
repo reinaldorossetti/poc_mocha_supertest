@@ -164,6 +164,18 @@ Nos testes precisamos adicionar os comandos abaixos:
     allureMocha.allure.severity('minor')
 ````
 
+## Plugins
+Para realizar o Debug do Mocha via VSCODE, utilizamos o Plugin Mocha Side Bar,
+precisamos instalar o nyc como pré-requisito, segue os links abaixo:
+
+https://www.npmjs.com/package/nyc
+https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar#
+
+** Com isso podemos executar os testes por dentro da IDE, monstrando todo
+
+O plugin abaixo ativa o debug da IDE quando mando o comando via console:
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-debug-nightly
+
 ## Lint  
 
 É boa prática que os arquivos estejam padronizados, seguindo o padrão de estilo do JS.
