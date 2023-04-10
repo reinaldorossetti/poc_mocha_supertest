@@ -2,10 +2,10 @@
 
 module.exports = {
   reporter: "mochawesome",
+  require: ['test/baseTests/global.js'],
   parallel: true,
   jobs: 4,
-  reporterOptions: 'json=false,html=true,reportDir=report,reportFilename=index',
-  require: ['test/baseTests/global.js'],
+  reporterOptions: 'json=false,reportDir=report,reportFilename=index',
   timeout: 3000,
   ui: "bdd",
   quiet: true,
