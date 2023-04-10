@@ -183,29 +183,15 @@ Após o término da sua implementação, execute:
 
 `npm run lint:fix`
 
-<<<<<<< HEAD
-## Plugins
-Para realizar o Debug do Mocha via VSCODE, utilizamos o Plugin Mocha Side Bar,
-precisamos instalar o nyc como pré-requisito, segue os links abaixo:
-
-https://www.npmjs.com/package/nyc
-https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar#
-
-** Com isso podemos executar os testes por dentro da IDE, monstrando todo
-
-O plugin abaixo ativa o debug da IDE quando mando o comando via console:
-https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-debug-nightly
-
-
 
 ##  Validação do Teste
 As validações foram feitas através do Chai Assertion Library, no formato que ele chama de  BDD style.
 Expect
 =======
 ##  Validaçãoes dos Testes
-As validações foram feitas através do Chai Assertion Library, no formato que ele chama de  BDD style usando o Expect.
->>>>>>> daab883c9bcf34f092e5baa3d9c07606582c5a94
-The BDD style is exposed through expect or should interfaces. In both scenarios, you chain together natural language assertions.
+As validações foram feitas através do Chai Assertion Library, no formato que ele chama de  BDD style usando o Expect.  
+The BDD style is exposed through expect or should interfaces. In both scenarios, you chain together natural language assertions.  
+
 ````JS
 var expect = require('chai').expect
   , foo = 'bar'
