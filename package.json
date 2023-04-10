@@ -6,7 +6,7 @@
   "author": "Rei",
   "scripts": {
     "test.local": "cross-env AMBIENTE='local' mocha --config .mocharcMochawesome.js --require mochawesome/register",
-    "test.prod": "cross-env AMBIENTE='producao' mocha --config .mocharcMochawesome.js --require mochawesome/register",
+    "test.prod": "cross-env AMBIENTE='producao' mocha --config .mocharcMochawesome.js",
     "test.ci": "cross-env AMBIENTE='producao' mocha --config .mocharcAllure.js",
     "lint": "standard",
     "lint:fix": "standard --fix",
