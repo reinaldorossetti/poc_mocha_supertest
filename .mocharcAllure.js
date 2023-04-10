@@ -5,5 +5,5 @@ module.exports = {
   require: ['test/baseTests/global.js'],
   timeout: 5000,
   ui: "bdd",
-  spec: ["test/features/**/*.test.js"]
+  spec: ["test/features/openweathermap/*.test.js"]
 }

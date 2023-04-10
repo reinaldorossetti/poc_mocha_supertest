@@ -3,9 +3,6 @@
 ** Exemplo de estrutura de automação de testes de API, feita com Mocha, Chai, SuperTest e Allure-Mocha. 
 Mocha fornece a execução dos testes e a forma que o mesmo é descrito, o Chai irá fornecer os asserts no formato style BDD, parecido com o Postman, e Allure fornece o relatório dos testes. **
 
-Report allure: (https://reinaldorossetti.github.io/poc_mocha_supertest/allure-report/#)  <br>
-Report mochawesome: (https://reinaldorossetti.github.io/poc_mocha_supertest/report/#)  <br>
-
 - [Instalação e execução](#instalação-e-execução)
   - [Pré-requisitos](#pré-requisitos)
   - [Clonando o repositório](#clonando-o-repositório)
@@ -65,6 +62,7 @@ Para exibir o Report (Foi utilizado o Allure Report):
 ```sh
 npm run report
 ```
+
 Para executar os testes localmente (_http://localhost:3000_) é preciso subir o ambiente local utilizando NPM ou Docker. [Verifique aqui como](https://github.com/PauloGoncalvesBH/ServeRest#ambientes-dispon%C3%ADveis). Após isso execute:
 
 ```sh
@@ -172,6 +170,35 @@ Para isso é utilizado a lib [Standard](https://www.npmjs.com/package/standard).
 Após o término da sua implementação, execute:
 
 `npm run lint:fix`
+
+## Plugins
+Para realizar o Debug do Mocha via VSCODE, utilizamos o Plugin Mocha Side Bar,
+precisamos instalar o nyc como pré-requisito, segue os links abaixo:
+
+https://www.npmjs.com/package/nyc
+https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar#
+
+** Com isso podemos executar os testes por dentro da IDE, monstrando todo
+
+O plugin abaixo ativa o debug da IDE quando mando o comando via console:
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-debug-nightly
+
+
+
+##  Validação do Teste
+As validações foram feitas através do Chai Assertion Library, no formato que ele chama de  BDD style.
+Expect
+The BDD style is exposed through expect or should interfaces. In both scenarios, you chain together natural language assertions.
+````JS
+var expect = require('chai').expect
+  , foo = 'bar'
+  , beverages = { tea: [ 'chai', 'matcha', 'oolong' ] };
+
+expect(foo).to.be.a('string');
+expect(foo).to.equal('bar');
+expect(foo).to.have.lengthOf(3);
+expect(beverages).to.have.property('tea').with.lengthOf(3);
+````
 
 ### Referências:  
 [Supertest](https://github.com/ladjs/supertest#readme)   
