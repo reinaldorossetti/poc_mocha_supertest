@@ -5,7 +5,7 @@
   "description": "Exemplo de estrutura de automação de API feita com Supertest e Mocha",
   "author": "Rei",
   "scripts": {
-    "test.local": "cross-env AMBIENTE='local' mocha -R allure-mocha",
+    "test.local": "cross-env AMBIENTE='local' mocha --config .mocharcMochawesome.js --require mochawesome/register",
     "test.prod": "cross-env AMBIENTE='producao' mocha --config .mocharcMochawesome.js --require mochawesome/register",
     "test.ci": "cross-env AMBIENTE='producao' mocha --config .mocharcAllure.js",
     "lint": "standard",
@@ -22,6 +22,7 @@
     "faker": "^4.1.0",
     "mocha": "^10.2.0",
     "mochawesome": "^7.1.3",
+    "mochawesome-with-mocha": "^7.1.3",
     "nyc": "^15.1.0",
     "standard": "^14.3.3",
     "supertest": "^4.0.2"

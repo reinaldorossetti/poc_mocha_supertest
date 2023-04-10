@@ -2,4 +2,5 @@ report/
 node_modules/
 allure-results/
 allure-report/
+mochawesome-report/
 *.html

@@ -1,5 +1,6 @@
 const rotaUsuarios = '/usuarios'
 const utils = require('../../baseTests/cadastrar')
+const allureMocha = require("allure-mocha/runtime");
 
 describe(rotaUsuarios + ' GET', () => {
   it('Query string - Busca por todos as chaves', async () => {
