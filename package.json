@@ -6,7 +6,7 @@
   "author": "Rei",
   "scripts": {
     "test.local": "cross-env AMBIENTE='local' mocha -R allure-mocha --retries 1",
-    "test.prod": "cross-env AMBIENTE='producao' mocha --config .mocharcMochawesome.js --retries 1",
+    "test.prod": "cross-env AMBIENTE='producao' mocha --config .mocharcMochawesome.js --retries 1 --require mochawesome/register",
     "test.ci": "cross-env AMBIENTE='producao' mocha --config .mocharcAllure.js --retries 1",
     "lint": "standard",
     "lint:fix": "standard --fix",

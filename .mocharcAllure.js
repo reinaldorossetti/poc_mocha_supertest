@@ -5,7 +5,7 @@ module.exports = {
   require: ['test/baseTests/global.js'],
   parallel: true,
   jobs: 4,
-  timeout: 5000,
+  timeout: 3000,
   ui: "bdd",
   spec: ["test/features/openweathermap/*.test.js"]
 }
